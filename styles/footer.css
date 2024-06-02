@@ -1,0 +1,115 @@
+/*These are the styles for the footer*/
+footer {
+  color: white;
+  background-color: black;
+  margin-top: 50px;
+}
+
+.footer {
+  /*This outer div is a flexbox*/
+  display: flex;
+  /*Vertical alignment of its items is in the center*/
+  align-items: center;
+  /*There is equal space between its contents*/
+  justify-content:space-between;
+}
+
+.help-you-div {
+  /*This div is a nested flexbox*/
+  display: flex;
+  /*Its items are aligned verically*/
+  flex-direction: column;
+  /*Its contents have equal space between them*/
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: Montserrat;
+  height: 175px;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.the-company-div {
+  /*This div is a nested flexbox*/
+  display: flex;
+  /*Its items are aligned vertically*/
+  flex-direction: column;
+  /*Its contents have equal space between them*/
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: Montserrat;
+  height: 175px;
+  margin-top: 20px;
+}
+
+.sign-up-div {
+  /*This div is a nested flexbox*/
+  display: flex;
+  /*Its items are aligned vertically*/
+  flex-direction: column;
+  /*Its contents have equal space between them*/
+  justify-content: space-between;
+  font-size: 14px;
+  font-family: Montserrat;
+  height: 250px;
+  margin-top: 85px;
+  margin-right: 40px;
+}
+
+/*These are the styles for the headings of each div*/
+.help-you,
+.the-company,
+.sign-up,
+.language,
+.country-region {
+  color: rgb(162, 162, 162);
+  margin-bottom: 3px;
+  text-decoration: none;
+}
+
+input,
+input::placeholder {
+  color: white;
+  width: 150px;
+  font-size: 14px;
+  font-family: Montserrat;
+  border: none;
+  background-color: black;
+}
+
+.english,
+.uae {
+  /*These divs are flexboxes that contain text and an image*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90px;
+}
+
+.uae {
+  width: 55px;
+}
+
+.english p,
+.uae p {
+  display: inline-block;
+}
+
+.down-arrow {
+  height: 14px;
+  width: 14px;
+}
+
+.statement {
+  font-family: Montserrat;
+  font-size: 10px;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.burberry-footer {
+  font-family: Platypi;
+  font-size: 175px;
+  letter-spacing: 35px;
+  color: white;
+  text-align: center;
+}

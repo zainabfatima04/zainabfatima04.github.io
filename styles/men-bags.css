@@ -1,0 +1,168 @@
+/*These are the styles for the body of the page*/
+body {
+  padding-top: 70px;
+  margin: 0;
+}
+
+.for-her-div {
+  position: relative;
+  margin-right: 25px;
+  margin-left: 90px;
+}
+
+.for-her-div p {
+  position: absolute;
+  top: 150px;
+  left: 470px;
+  font-family: Josefin Sans;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 16px;
+}
+
+.for-her-div img {
+  height: 500px;
+  width: 360px;
+  object-fit: contain;
+} 
+
+/*These are the styles for the navigation bar*/
+.header {
+  height: 60px;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  font-family: Josefin Sans;
+  font-size: 15px;
+  background-color: white;
+}
+
+/*These are the styles for the left section of the navigation bar*/
+.left-section-header {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+/*These are the styles for the right section of the navigation bar*/
+.right-section-header {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin-right: 40px;
+  align-items: center;
+  font-size: 14px
+}
+
+.sort-by {
+  margin-left: 20px;
+}
+
+.down-arrow {
+  height: 18px;
+  width: 18px;
+  margin-left: 8px;
+}
+
+.down-arrow-div {
+  position: relative;
+}
+
+.category-menu,
+.sort-by-menu {
+  position: absolute;
+  top: 18px;
+  left: -50px;
+  display: none;
+  z-index: 1;
+  text-align: left;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  color: rgb(98, 98, 98);
+  font-size: 14px;
+  font-family: Montserrat;
+}
+
+.category-menu a,
+.sort-by-menu a  {
+  color: black;
+  display: block;
+  border-bottom: solid rgb(178, 178, 178) 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 70px;
+}
+
+.category-menu a:hover,
+.sort-by-menu a:hover {
+  background-color: #ddd;
+}
+
+.sort-by-menu {
+  left: -110px;
+}
+
+.sort-by-menu a {
+  padding-right: 20px;
+  width: 135px;
+} 
+
+.down-arrow-div:hover .category-menu,
+.down-arrow-div:hover .sort-by-menu{
+  display: block;
+}
+
+.items-grid {
+  /*This is a grid*/
+  display: grid;
+  /*It has four columns each taking up equal space*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 50px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.item-preview {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image {
+  /*The position of the original image is set to relative*/
+  position: relative;
+}
+
+.hover-image {
+  /*The position of the hover image is set to absolute and it is inline with the original image*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.item-image:hover .hover-image {
+  /*Hovering over the original image causes the display of the hover image to change to block*/
+  display: block;
+}
+
+.item {
+  width: 307px;
+}
+
+.item-name {
+  font-family: Josefin Sans;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.item-price {
+  font-family: Josefin Sans;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  text-align: center;
+}
