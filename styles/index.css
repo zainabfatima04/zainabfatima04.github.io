@@ -272,6 +272,7 @@ video {
   width: 360px;
 }
 
+/*These transition effects are triggered when 'hidden' elements leave the viewport*/
 .hidden {
   opacity: 0;
   filter: blur(5px);
@@ -279,6 +280,7 @@ video {
   transform: translateY(-30px);
 }
 
+/*These transition effects are triggered when 'hidden' elements intersect with the viewport*/
 .show {
   opacity: 1;
   filter: blur(0);
